@@ -44,7 +44,7 @@ gulp.task('sass', function() {
 
 // Watch
 gulp.task('watch', function(){
-    gulp.watch('app/scss/**/*.scss', gulp.series(['sass']));
+    gulp.watch('app/sass/**/*.scss', gulp.series(['sass']));
 })
 
 gulp.task('useref', function(){
