@@ -1,5 +1,112 @@
-h1 {
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%; }
+
+.hero__nav {
+  width: inherit;
+  height: 5.75rem;
+  background-image: url(/Starter-file/app/image/bar-17.png); }
+
+ul.main-nav {
+  float: right;
+  list-style-type: none;
+  display: flex;
+  margin-top: 2rem;
+  padding-right: 10rem; }
+
+.main-nav li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none; }
+
+.main-nav li a:hover:not(.active) {
+  background-color: #1087c7;
+  color: white; }
+
+.nav-logo {
+  position: absolute;
+  width: 2%;
+  right: 1%;
+  margin-top: 3%;
+  margin-right: 90%; }
+
+#logo {
+  position: absolute;
+  width: 2%;
+  right: 1%;
+  margin-top: 3%;
+  margin-right: 7%; }
+
+.infos {
+  background-color: #f4cf1b;
+  padding: 2%; }
+
+.infos__titre {
+  font-size: 25px;
+  padding-bottom: 1%;
   text-align: center;
-  color: rebeccapurple;
-  padding: 20px;
-  padding-top: initial; }
+  font-weight: bold;
+  color: #1087c7; }
+
+.text {
+  text-align: center;
+  margin-bottom: 0em; }
+
+.expose {
+  display: flex;
+  padding: 3%; }
+
+.expose__info .paragraphe {
+  text-align: center;
+  font-weight: bold;
+  color: #1087c7;
+  font-size: 20px; }
+
+.expose__info img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.expose__info .Ligne {
+  text-align: center;
+  margin-bottom: 0em;
+  font-weight: bold;
+  color: #87837f;
+  font-size: 20px; }
+
+.expose__info button {
+  width: 650px;
+  background-image: url(../image/bar-17.png);
+  background-position: center;
+  padding: 15px;
+  margin-top: 3%;
+  border: 2px solid #1087c7;
+  border-radius: 12px;
+  color: #1087c7;
+  font-size: 20px;
+  font-weight: bold; }
+  .expose__info button:hover:not(.active) {
+    background-color: #1087c7;
+    color: white; }
+
+.expose__image img {
+  width: 100%;
+  height: auto; }
+
+@media screen and (max-width: 900px) {
+  ul.main-nav {
+    width: 100%;
+    height: auto;
+    position: relative; }
+  ul.main-nav li a {
+    float: left;
+    padding: 15px; } }
+
+@media screen and (max-width: 400px) {
+  ul.main-nav li a {
+    text-align: center;
+    float: none; } }

@@ -1,0 +1,158 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+
+.hero__nav{
+    width: inherit;
+    height: 5.75rem;
+    background-image: url(/Starter-file/app/image/bar-17.png);
+    
+    
+}
+ul.main-nav{
+  float: right;
+  list-style-type: none;
+  display: flex;
+  margin-top: 2rem;
+  padding-right: 10rem;
+  
+}
+.main-nav li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+   
+  }
+
+.main-nav li a:hover:not(.active) {
+    background-color: $color_titre;
+    color: $color_white;
+  }
+
+.nav-logo{
+    position: absolute;
+    width: 2%;
+    right: 1%;
+    margin-top: 3%;
+    margin-right: 90%;
+    
+}
+#logo{
+    position: absolute;
+    width: 2%;
+    right: 1%;
+    margin-top: 3%;
+    margin-right: 7%;
+}
+
+.infos{
+    background-color: $color_yellow;
+    padding: 2%;
+}
+
+.infos__titre{
+    font-size: 25px;
+    padding-bottom: 1%;
+    text-align: center;
+    font-weight: bold;
+    color: $color_titre;
+}
+.text{
+    text-align: center;
+    margin-bottom: 0em;
+}
+
+.expose{
+    display: flex;
+    padding: 3%;
+}
+
+
+.expose__info{
+    .paragraphe{
+        text-align: center;
+        font-weight: bold;
+        color:$color_titre;
+        font-size: 20px;
+    }
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .Ligne{
+    
+        text-align: center;
+        margin-bottom: 0em;
+        font-weight: bold;
+        color:$color_texte;
+        font-size: 20px;
+    }
+    button{
+        width: 650px;
+        background-image: url(../image/bar-17.png);
+        background-position: center;
+        padding: 15px;
+        margin-top: 3%;
+        border: 2px solid $color_titre;
+        border-radius: 12px;
+        color: $color_titre;
+        font-size: 20px;
+        font-weight: bold;
+        &:hover:not(.active) {
+            background-color: $color_titre;
+            color: $color_white;
+          }
+    }
+
+}
+
+.expose__image{
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 900px) {
+    ul.main-nav {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    
+    ul.main-nav li a {
+      float: left;
+      padding: 15px;
+    }
+    
+  }
+  
+  @media screen and (max-width: 400px) {
+    ul.main-nav li a {
+      text-align: center;
+      float: none;
+    }
+  }
+
