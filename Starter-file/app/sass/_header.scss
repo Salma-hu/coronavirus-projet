@@ -4,7 +4,13 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 100%;
+    
 }
+body{
+
+    font-family: 'Cairo', sans-serif;
+}
+
 
 
 .hero__nav{
@@ -14,7 +20,7 @@
     
     
 }
-ul.main-nav{
+ul.main__nav{
   float: right;
   list-style-type: none;
   display: flex;
@@ -22,18 +28,26 @@ ul.main-nav{
   padding-right: 10rem;
   
 }
-.main-nav li a {
+.main__nav li a {
     display: block;
     color: #000;
     padding: 8px 16px;
     text-decoration: none;
+    
+    li a:hover:not(.active) {
+        background-color: $color_titre;
+        color: $color_white;
+    }
    
   }
+.nav-cons{
+    font-weight: bold;
+    color: $color_logo;
+}
 
-.main-nav li a:hover:not(.active) {
-    background-color: $color_titre;
-    color: $color_white;
-  }
+    
+
+
 
 .nav-logo{
     position: absolute;
@@ -85,6 +99,7 @@ ul.main-nav{
         display: block;
         margin-left: auto;
         margin-right: auto;
+        padding: 1.18rem;
     }
     .Ligne{
     
@@ -95,20 +110,7 @@ ul.main-nav{
         font-size: 20px;
     }
     button{
-        width: 650px;
-        background-image: url(../image/bar-17.png);
-        background-position: center;
-        padding: 15px;
-        margin-top: 3%;
-        border: 2px solid $color_titre;
-        border-radius: 12px;
-        color: $color_titre;
-        font-size: 20px;
-        font-weight: bold;
-        &:hover:not(.active) {
-            background-color: $color_titre;
-            color: $color_white;
-          }
+        @include button
     }
 
 }
@@ -136,13 +138,13 @@ ul.main-nav{
 
 
   @media screen and (max-width: 900px) {
-    ul.main-nav {
+    ul.main__nav {
       width: 100%;
       height: auto;
       position: relative;
     }
     
-    ul.main-nav li a {
+    ul.main__nav li a {
       float: left;
       padding: 15px;
     }
@@ -150,7 +152,7 @@ ul.main-nav{
   }
   
   @media screen and (max-width: 400px) {
-    ul.main-nav li a {
+    ul.main__nav li a {
       text-align: center;
       float: none;
     }

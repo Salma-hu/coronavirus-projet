@@ -1,31 +1,37 @@
-@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Roboto:wght@500&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-size: 100%; }
 
+body {
+  font-family: 'Cairo', sans-serif; }
+
 .hero__nav {
   width: inherit;
   height: 5.75rem;
   background-image: url(/Starter-file/app/image/bar-17.png); }
 
-ul.main-nav {
+ul.main__nav {
   float: right;
   list-style-type: none;
   display: flex;
   margin-top: 2rem;
   padding-right: 10rem; }
 
-.main-nav li a {
+.main__nav li a {
   display: block;
   color: #000;
   padding: 8px 16px;
   text-decoration: none; }
+  .main__nav li a li a:hover:not(.active) {
+    background-color: #1087c7;
+    color: white; }
 
-.main-nav li a:hover:not(.active) {
-  background-color: #1087c7;
-  color: white; }
+.nav-cons {
+  font-weight: bold;
+  color: #308ab7; }
 
 .nav-logo {
   position: absolute;
@@ -69,7 +75,8 @@ ul.main-nav {
 .expose__info img {
   display: block;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding: 1.18rem; }
 
 .expose__info .Ligne {
   text-align: center;
@@ -98,15 +105,38 @@ ul.main-nav {
   height: auto; }
 
 @media screen and (max-width: 900px) {
-  ul.main-nav {
+  ul.main__nav {
     width: 100%;
     height: auto;
     position: relative; }
-  ul.main-nav li a {
+  ul.main__nav li a {
     float: left;
     padding: 15px; } }
 
 @media screen and (max-width: 400px) {
-  ul.main-nav li a {
+  ul.main__nav li a {
     text-align: center;
     float: none; } }
+
+h1 {
+  margin-top: 40px;
+  font-weight: bold;
+  font-size: 211%;
+  text-align: center;
+  color: #1078ad; }
+
+.content {
+  display: flex;
+  flex-wrap: wrap; }
+
+.cont {
+  flex: 4 0 40%;
+  margin: 20px;
+  height: 253px;
+  color: #1078ad;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+p {
+  text-align: center; }
