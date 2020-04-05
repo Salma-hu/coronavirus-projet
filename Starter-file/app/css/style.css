@@ -143,17 +143,18 @@ ul.main__nav {
 
 .recommandations {
   background-color: #1078ad;
-  padding: 1rem; }
+  padding-bottom: 5%;
+  padding-top: 2%; }
 
 .titre {
-  margin-top: 40px;
+  padding-bottom: 2%;
   font-weight: bold;
   font-size: 211%;
   text-align: center;
   color: white; }
 
 .soustitre {
-  margin-top: 1.063rem;
+  padding-bottom: 1%;
   font-weight: bold;
   font-size: 120%;
   padding-left: 17rem;
@@ -164,10 +165,13 @@ ul.main__nav {
   padding-left: 1.125rem; }
   .recommand__paragraph {
     color: white;
-    padding-left: 9rem;
-    margin-top: 2rem; }
+    padding-left: 9rem; }
+    .recommand__paragraph span {
+      color: #f4cf1b;
+      font-weight: bold; }
   .recommand__partie {
-    margin-left: 3.125rem; }
+    margin-left: 5rem;
+    margin-top: -4%; }
     .recommand__partie .titr {
       color: #f4cf1b;
       font-size: 1.5rem;
@@ -222,11 +226,11 @@ ul.main__nav {
     color: white; }
 
 .footer {
-  padding: 2rem; }
+  padding: 1rem; }
 
 .logo {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #1087c7; }
 
 .contact {
@@ -250,14 +254,18 @@ ul.main__nav {
       font-size: 131%; }
   .foot__accon {
     margin-left: -3rem;
-    margin-top: 6.688rem; }
+    margin-top: 9rem; }
     .foot__accon .acc {
       display: block;
       margin-left: 20.5rem;
       text-decoration: none;
       border-bottom: 0.1em solid #96c5dc;
       width: 15.5em;
-      text-align: center; }
+      text-align: center;
+      font-size: 108%; }
+    .foot__accon .acc1 {
+      font-weight: bold;
+      color: #1087c7; }
 
 .capback {
   background-color: #1078ad;

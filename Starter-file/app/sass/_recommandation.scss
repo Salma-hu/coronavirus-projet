@@ -1,9 +1,10 @@
 .recommandations{
     background-color: $color_back;
-    padding: 1rem;
+    padding-bottom: 5%;
+    padding-top: 2%;
 }
 .titre{
-    margin-top: 40px;
+    padding-bottom: 2%;
     font-weight: bold;
     font-size: 211%;
     text-align: center;
@@ -11,7 +12,7 @@
 }
 
 .soustitre{
-    margin-top: 1.063rem;
+    padding-bottom: 1%;
     font-weight: bold;
     font-size: 120%;
     padding-left: 17rem;
@@ -25,12 +26,17 @@
     &__paragraph{
         color: $color_white;
         padding-left: 9rem;
-        margin-top: 2rem;
+        span{
+            color: $color_yellow;
+            font-weight: bold;
+    
+        }
         
     }
     &__partie{
 
-            margin-left: 3.125rem;
+            margin-left: 5rem;
+            margin-top: -4%;
             
         .titr{
             color: $color_yellow;
