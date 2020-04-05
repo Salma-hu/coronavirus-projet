@@ -1,0 +1,33 @@
+.texte{
+    background-color: $color_ciel;
+    padding: 2%;
+    
+}
+
+.txt{
+    
+    font-weight: bold;
+    font-size: 162%;
+    text-align: center;
+    color:$color_back;
+    margin-bottom: 2%;
+    
+}
+
+.imag{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btxt{
+    
+    @include button
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+}

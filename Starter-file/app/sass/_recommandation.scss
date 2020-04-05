@@ -1,0 +1,59 @@
+.recommandations{
+    background-color: $color_back;
+    padding: 1rem;
+}
+.titre{
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 211%;
+    text-align: center;
+    color:$color_white;
+}
+
+.soustitre{
+    margin-top: 1.063rem;
+    font-weight: bold;
+    font-size: 120%;
+    padding-left: 17rem;
+    color:$color_white;
+}
+
+
+.recommand{
+    display: flex;
+    padding-left: 1.125rem;
+    &__paragraph{
+        color: $color_white;
+        padding-left: 9rem;
+        margin-top: 2rem;
+        
+    }
+    &__partie{
+
+            margin-left: 3.125rem;
+            
+        .titr{
+            color: $color_yellow;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 0.563rem;
+        }
+        .but{
+            background-color: $color_yellow; 
+            border: none;
+            color: $color_back;
+            padding: 0.25rem ;
+            border-radius: 5px;
+            font-size: 1.5rem;
+            display: block;
+            font-weight: bold;
+            width: 12rem;
+            margin-bottom: 0.563rem;
+            
+            
+          }
+        
+    }
+
+}

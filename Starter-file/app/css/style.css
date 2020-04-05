@@ -85,7 +85,7 @@ ul.main__nav {
   color: #87837f;
   font-size: 20px; }
 
-.expose__info button {
+.expose__info .btn {
   width: 650px;
   background-image: url(../image/bar-17.png);
   background-position: center;
@@ -96,7 +96,7 @@ ul.main__nav {
   color: #1087c7;
   font-size: 20px;
   font-weight: bold; }
-  .expose__info button:hover:not(.active) {
+  .expose__info .btn:hover:not(.active) {
     background-color: #1087c7;
     color: white; }
 
@@ -118,7 +118,7 @@ ul.main__nav {
     text-align: center;
     float: none; } }
 
-h1 {
+.title {
   margin-top: 40px;
   font-weight: bold;
   font-size: 211%;
@@ -138,5 +138,128 @@ h1 {
   align-items: center;
   justify-content: center; }
 
-p {
+.para {
   text-align: center; }
+
+.recommandations {
+  background-color: #1078ad;
+  padding: 1rem; }
+
+.titre {
+  margin-top: 40px;
+  font-weight: bold;
+  font-size: 211%;
+  text-align: center;
+  color: white; }
+
+.soustitre {
+  margin-top: 1.063rem;
+  font-weight: bold;
+  font-size: 120%;
+  padding-left: 17rem;
+  color: white; }
+
+.recommand {
+  display: flex;
+  padding-left: 1.125rem; }
+  .recommand__paragraph {
+    color: white;
+    padding-left: 9rem;
+    margin-top: 2rem; }
+  .recommand__partie {
+    margin-left: 3.125rem; }
+    .recommand__partie .titr {
+      color: #f4cf1b;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 0.563rem; }
+    .recommand__partie .but {
+      background-color: #f4cf1b;
+      border: none;
+      color: #1078ad;
+      padding: 0.25rem;
+      border-radius: 5px;
+      font-size: 1.5rem;
+      display: block;
+      font-weight: bold;
+      width: 12rem;
+      margin-bottom: 0.563rem; }
+
+.texte {
+  background-color: #96c5dc;
+  padding: 2%; }
+
+.txt {
+  font-weight: bold;
+  font-size: 162%;
+  text-align: center;
+  color: #1078ad;
+  margin-bottom: 2%; }
+
+.imag {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.btxt {
+  width: 650px;
+  background-image: url(../image/bar-17.png);
+  background-position: center;
+  padding: 15px;
+  margin-top: 3%;
+  border: 2px solid #1087c7;
+  border-radius: 12px;
+  color: #1087c7;
+  font-size: 20px;
+  font-weight: bold;
+  width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+  .btxt:hover:not(.active) {
+    background-color: #1087c7;
+    color: white; }
+
+.footer {
+  padding: 2rem; }
+
+.logo {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #1087c7; }
+
+.contact {
+  color: #1078ad;
+  font-size: 134%;
+  padding-bottom: 2%; }
+
+.foot {
+  display: flex;
+  padding-left: 5rem; }
+  .foot__contact {
+    padding-left: 4rem;
+    margin-top: 2rem;
+    text-align: center; }
+    .foot__contact .tex {
+      font-size: 100%;
+      font-weight: bold; }
+    .foot__contact .num {
+      color: #369d53;
+      font-weight: bold;
+      font-size: 131%; }
+  .foot__accon {
+    margin-left: -3rem;
+    margin-top: 6.688rem; }
+    .foot__accon .acc {
+      display: block;
+      margin-left: 20.5rem;
+      text-decoration: none;
+      border-bottom: 0.1em solid #96c5dc;
+      width: 15.5em;
+      text-align: center; }
+
+.capback {
+  background-color: #1078ad;
+  width: 100%;
+  height: 40px; }
