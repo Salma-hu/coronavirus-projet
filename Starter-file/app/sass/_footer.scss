@@ -1,10 +1,10 @@
 .footer{
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .logo{
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: $color_titre;
    
 }
@@ -38,7 +38,7 @@
     }
     &__accon{
         margin-left: -3rem;
-        margin-top: 6.688rem;
+        margin-top: 9rem;
         .acc{
             display: block;
             margin-left: 20.5rem;
@@ -46,10 +46,23 @@
             border-bottom: .1em solid rgba($color_ciel, $alpha: 1.0);
             width: 15.5em;
             text-align: center;
+            font-size: 108%;
         
         }
+        .acc1{
+            font-weight: bold;
+            color: $color_titre;
+        }
+       
     }
+    
 }
+
+
+
+
+
+
 
 
 .capback{
