@@ -1,0 +1,41 @@
+.ptitle{
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 211%;
+    text-align: center;
+    color:$color_back;
+}
+.protec{
+    display: flex;
+    flex-wrap: wrap;
+}
+.pro{
+
+    flex: 4 0 22%;
+    margin: 20px;
+    height: 253px;
+    color:$color_back;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.parag{
+    text-align: center;
+    font-weight: bold;
+    
+}
+.restez{
+    text-align: center;
+    margin-top: 6%;
+    padding-bottom: 9%;
+    &__chez{
+        width: 8%;
+    }
+    &__vous{
+        
+        font-weight: bold;
+        font-size: 165%;
+        color:$color_back;
+    }
+
+}

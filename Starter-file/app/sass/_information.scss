@@ -1,0 +1,33 @@
+.information{
+    padding: 3%;
+    background-color: $color_nav;
+}
+
+.tit{
+    margin-top: 2px;
+    font-weight: bold;
+    font-size: 236%;
+    text-align: center;
+    color:$color_back;
+}
+.infopara{
+    text-align: center;
+    color: #1a519e;
+    font-size: 125%;
+    
+}
+
+.infobut{
+    
+    width: 273px;
+    background-color: $color_back;
+    padding: 14px;
+    margin-top: 3%;
+    margin-left: 39%;
+    border: 2px solid $color_logo;
+    border-radius: 4px;
+    color: $color_white;
+    font-size: 20px;
+
+      
+}
