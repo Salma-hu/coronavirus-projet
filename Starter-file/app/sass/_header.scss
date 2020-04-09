@@ -96,7 +96,7 @@ body{
          text-align: center;
          font-weight: bold;
          color:$color_titre;
-        font-size: 20px;
+         font-size: 20px;
      }
     img{
          display: block;
@@ -196,17 +196,29 @@ body{
         margin-top: 4%;
         margin-right: 12%;
       }
+  }
 
-      .expose__info{
 
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: stretch;
-        align-content: stretch;
-      }
+  @media (max-width:500px) {
 
+
+
+    .expose{
+      display: flex;
+      flex-direction: column-reverse;
+      
+    }
+
+   
+    .expose__info{
+
+      display: flex;
+      width: 55%;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: auto;
+
+  }
 
   }
 

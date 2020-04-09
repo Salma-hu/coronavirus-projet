@@ -8,20 +8,25 @@ var gulpIf = require('gulp-if');
 var cssnano = require('gulp-cssnano');
 var imagemin = require('gulp-imagemin');
 var cache = require('gulp-cache');
-const autoprefixer = require('gulp-autoprefixer');
 const { series } = require('gulp');
 var concat = require('gulp-concat');
+var wring = require('csswring');
+var autoprifixer = require('autoprefixer');
+var postcss = require('gulp-postcss');
+
+
+
  
 
 
-gulp.task('prefix', () =>
+/*gulp.task('prefix', () =>
     gulp.src('app/css/style.css')
         .pipe(autoprefixer({
             browsers: ['last 99 versions'],
             cascade: false
     }))
-    .pipe(gulp.dest('app/css'))
-);
+    .pipe(gulp.dest('dist/css'))
+);*/
 
 // Live Server
 gulp.task('browserSync', function() {
@@ -48,13 +53,21 @@ gulp.task('watch', function(){
 })
 
 gulp.task('useref', function(){
+
+  var process =[
+    autoprifixer({
+      browsers :'last 10 version'
+    }),
+
+    wring
+  ]
     return gulp.src('app/*.html')
       .pipe(useref())
       // Minifies only if it's a JavaScript file
       .pipe(gulpIf('*.js', uglify()))
       // Minifies only if it's a CSS file
-      .pipe(gulpIf('*.css', cssnano()))
-      .pipe(gulp.dest('dist'))
+      .pipe(gulpIf('*.css', postcss(process)))
+      .pipe(gulp.dest('./dist'))
       
 });
 
@@ -80,4 +93,4 @@ gulp.task('css', function() {
     .pipe(gulp.dest('./dist/'));
 });
 //Build Prod
-exports.build = series('sass', 'images', 'prefix', 'useref');
+exports.build = series('sass', 'images', 'useref');

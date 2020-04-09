@@ -63,3 +63,39 @@
     }
 
 }
+
+@media (max-width:500px) {
+
+
+
+    .recommandations{
+      display: flex;
+      flex-direction: column;
+      
+      
+    }
+
+   
+    .recommand{
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-content: center;
+
+     &__paragraph{
+        padding-left: 1rem;
+
+      }
+      &__partie{
+          margin-top: 9%;
+          margin-left: -3%;
+
+      }
+  }
+  .soustitre{
+      padding-left: 2rem;
+      padding-bottom: 7%;
+  }
+
+  }
