@@ -717,15 +717,15 @@ body {
   .container .progre #questCount {
     font-weight: bold; }
 
-.container .design {
+.container .addition {
   padding: 4em;
-  background-color: #1078ad; }
-  .container .design h5 {
+  background-color: #96c5dc; }
+  .container .addition h5 {
     text-align: center;
     color: #308ab7;
     font-weight: bold;
     padding-bottom: 1em; }
-  .container .design p {
+  .container .addition p {
     text-align: center; }
 
 @keyframes next {
