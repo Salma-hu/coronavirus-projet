@@ -765,3 +765,43 @@ input[type="radio"]:checked + label span {
   width: 35em;
   padding: 0.22em;
   border: 0.5px solid #1078ad; }
+
+.container input[type=radio]:checked + label {
+  background-color: #1078ad;
+  color: #f4cf1b; }
+
+.container .fx {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.container .lab {
+  border: 0.5px solid #1078ad;
+  margin-left: -0.25em;
+  font-size: 1em;
+  padding: 0.22em;
+  border-left: none;
+  width: 4em;
+  text-align: center;
+  color: #87837f;
+  background-color: #edf6fa; }
+
+.container .design {
+  padding: 4em;
+  background-color: #e9ecef; }
+
+.container .design h5 {
+  text-align: center;
+  color: #1078ad;
+  font-weight: bold;
+  padding-bottom: 1em; }
+
+.container .design p {
+  text-align: center; }
